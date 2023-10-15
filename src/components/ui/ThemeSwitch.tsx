@@ -11,7 +11,7 @@ export const ThemeSwitch = () => {
 
 	return (
 		<button
-			className="flex h-12 w-12 items-center justify-center  transition-colors duration-200"
+			className="h-12 w-12 items-center justify-center transition-colors duration-200"
 			type="button"
 			role="switch"
 			onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}

@@ -14,8 +14,8 @@ const config: Config = {
 				'spin-slow': 'spin 3s linear infinite',
 			},
 			colors: {
-				headingFill: '#12B0C9',
-				headingOutline: '#CADB58',
+				'ram-primary': '#12B0C9',
+				'ram-secondary': '#CADB58',
 				socials: {
 					facebook: '#1877F2',
 					twitter: '#1da1f2',

@@ -19,7 +19,7 @@ export default function Home() {
 				<ThemeSwitch />
 			</div>
 			<h1
-				className={`${ramFont.className} thicc-outline text-headingFill mx-auto text-center text-8xl `}
+				className={`${ramFont.className} thicc-outline mx-auto text-center text-8xl text-ram-primary `}
 			>
 				Wubba Lubba dub-dub
 			</h1>
@@ -46,7 +46,7 @@ export default function Home() {
 					/>
 				</div>
 				<Image
-					className="duration-3000 animate-spin-slow hover:animate-spin-slow mx-auto transition-all "
+					className="duration-3000 mx-auto animate-spin-slow transition-all hover:animate-spin-slow "
 					src="/assets/portal.png"
 					alt="Rick and Morty"
 					width={500}
