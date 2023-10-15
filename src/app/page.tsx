@@ -5,7 +5,6 @@ import { ThemeSwitch } from '@/ram/components/ui/ThemeSwitch'
 
 const ramFont = localFont({
 	src: '../lib/fonts/WubbaLubbaDubDub.woff2',
-	// src: '../lib/fonts/getSchwifty.woff2',
 	preload: true,
 	display: 'swap',
 	weight: 'normal',
