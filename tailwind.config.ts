@@ -10,6 +10,9 @@ const config: Config = {
 	darkMode: 'class',
 	theme: {
 		extend: {
+			animation: {
+				'spin-slow': 'spin 3s linear infinite',
+			},
 			colors: {
 				headingFill: '#12B0C9',
 				headingOutline: '#CADB58',
