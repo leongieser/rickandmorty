@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+	--heading-fill: #12b0c9;
+	--heading-outline: #cadb58;
+}
+
+.thicc-outline {
+	color: var(--heading-fill);
+	text-shadow:
+		-2px -2px 0 var(--heading-outline),
+		0 -2px 0 var(--heading-outline),
+		2px -2px 0 var(--heading-outline),
+		2px 0 0 var(--heading-outline),
+		2px 2px 0 var(--heading-outline),
+		0 2px 0 var(--heading-outline),
+		-2px 2px 0 var(--heading-outline),
+		-2px 0 0 var(--heading-outline);
+}
