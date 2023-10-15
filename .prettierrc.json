@@ -1,0 +1,22 @@
+{
+	"$schema": "https://json.schemastore.org/prettierrc",
+	"trailingComma": "es5",
+	"useTabs": true,
+	"tabWidth": 4,
+	"semi": false,
+	"singleQuote": true,
+	"plugins": [
+		"@trivago/prettier-plugin-sort-imports",
+		"prettier-plugin-tailwindcss"
+	],
+	"tailwindFunctions": ["clsx", "cva", "tailwind-merge", "cn"],
+	"importOrder": [
+		"server-only",
+		"^react$",
+		"^react-(.*)$",
+		"^next(.*)$",
+		"<THIRD_PARTY_MODULES>",
+		"^[@/]",
+		"^[./]"
+	]
+}

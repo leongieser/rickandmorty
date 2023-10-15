@@ -1,27 +1,56 @@
 {
-  "name": "rickandmorty",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "13.5.4"
-  },
-  "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "autoprefixer": "^10",
-    "postcss": "^8",
-    "tailwindcss": "^3",
-    "eslint": "^8",
-    "eslint-config-next": "13.5.4"
-  }
+	"name": "rickandmorty",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"format": "prettier -l .",
+		"format:fix": "prettier --write .",
+		"prepare": "husky install"
+	},
+	"dependencies": {
+		"class-variance-authority": "^0.7.0",
+		"clsx": "^2.0.0",
+		"next": "13.5.4",
+		"next-themes": "^0.2.1",
+		"react": "^18",
+		"react-dom": "^18",
+		"server-only": "^0.0.1",
+		"tailwind-merge": "^1.14.0",
+		"tailwindcss-animate": "^1.0.7",
+		"zod": "^3.22.4"
+	},
+	"devDependencies": {
+		"@tailwindcss/aspect-ratio": "^0.4.2",
+		"@tailwindcss/container-queries": "^0.1.1",
+		"@tailwindcss/forms": "^0.5.6",
+		"@tailwindcss/typography": "^0.5.10",
+		"@trivago/prettier-plugin-sort-imports": "^4.2.0",
+		"@types/node": "^20",
+		"@types/react": "^18",
+		"@types/react-dom": "^18",
+		"autoprefixer": "^10",
+		"eslint": "^8",
+		"eslint-config-next": "13.5.4",
+		"eslint-config-prettier": "^9.0.0",
+		"husky": "^8.0.0",
+		"lint-staged": "^15.0.1",
+		"postcss": "^8",
+		"prettier": "^3.0.3",
+		"prettier-plugin-tailwindcss": "^0.5.6",
+		"tailwindcss": "^3",
+		"typescript": "^5"
+	},
+	"lint-staged": {
+		"*.ts?(x)": [
+			"prettier --parser=typescript --write",
+			"eslint --fix"
+		],
+		"*.{yaml,json,md}": [
+			"prettier --write"
+		]
+	}
 }
