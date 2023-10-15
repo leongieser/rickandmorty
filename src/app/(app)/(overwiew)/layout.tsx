@@ -3,5 +3,5 @@ export default function OverviewLayout({
 }: {
 	children: React.ReactNode
 }) {
-	return <main className="h-full w-screen">{children}</main>
+	return <main className="flex w-full flex-grow">{children}</main>
 }

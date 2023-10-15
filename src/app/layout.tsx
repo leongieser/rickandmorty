@@ -30,7 +30,7 @@ export default function RootLayout({
 	return (
 		<html lang="en" className="dark" style={{ colorScheme: 'dark' }}>
 			<body
-				className={`flex h-screen w-screen flex-col ${inter.className}`}
+				className={`flex min-h-screen w-screen flex-col items-center justify-center ${inter.className}`}
 			>
 				<Providers>
 					<BreakpointIndicator />

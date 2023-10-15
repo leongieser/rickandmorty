@@ -4,7 +4,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<>
 			<Header />
-			<main className="h-full flex-grow">{children}</main>
+			<main className="flex h-full w-screen flex-grow">{children}</main>
 		</>
 	)
 }

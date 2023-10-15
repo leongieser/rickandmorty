@@ -14,17 +14,17 @@ const ramFont = localFont({
 
 export default function Home() {
 	return (
-		<main className="flex min-h-screen w-screen flex-col items-center justify-center gap-12 p-24">
+		<main className="flex min-h-full w-screen flex-col items-center justify-center gap-12 p-24">
 			<div className="absolute right-5 top-5">
 				<ThemeSwitch />
 			</div>
 			<h1
-				className={`${ramFont.className} thicc-outline mx-auto text-center text-8xl text-headingFill `}
+				className={`${ramFont.className} thicc-outline text-headingFill mx-auto text-center text-8xl `}
 			>
 				Wubba Lubba dub-dub
 			</h1>
 			<Link
-				href={'/episodes'}
+				href={'/characters'}
 				className="group flex w-full items-center justify-center "
 			>
 				<div className="absolute h-80 w-80 ">
@@ -34,7 +34,6 @@ export default function Home() {
 						alt="Rick and Morty"
 						width={350}
 						height={350}
-						layout="fixed"
 						fetchPriority="high"
 					/>
 					<Image
@@ -47,7 +46,7 @@ export default function Home() {
 					/>
 				</div>
 				<Image
-					className="duration-3000 mx-auto animate-spin-slow transition-all hover:animate-spin-slow "
+					className="duration-3000 animate-spin-slow hover:animate-spin-slow mx-auto transition-all "
 					src="/assets/portal.png"
 					alt="Rick and Morty"
 					width={500}

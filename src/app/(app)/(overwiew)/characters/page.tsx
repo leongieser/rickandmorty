@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function Characters() {
 	return (
-		<div className="flex h-full w-full flex-col items-center bg-zinc-800 p-5">
+		<div className="flex w-full flex-grow flex-col items-center bg-zinc-800 p-5">
 			<h1 className="text-2xl">Characters</h1>
 		</div>
 	)

@@ -16,18 +16,6 @@ export function HeaderNavLinks() {
 		<nav className="flex h-full items-center gap-4">
 			<Link
 				className={`relative flex h-full items-center px-5 ${
-					navLinks.episodes === pathname ? 'bg-zinc-950' : ''
-				}`}
-				href={'/episodes'}
-			>
-				Episodes
-				{navLinks.episodes === pathname && (
-					<span className="absolute inset-x-0 bottom-0 h-1 bg-cyan-600" />
-				)}
-			</Link>
-
-			<Link
-				className={`relative flex h-full items-center px-5 ${
 					navLinks.characters === pathname ? 'bg-zinc-950' : ''
 				}`}
 				href={'/characters'}
@@ -37,7 +25,17 @@ export function HeaderNavLinks() {
 					<span className="absolute inset-x-0 bottom-0 h-1 bg-cyan-600" />
 				)}
 			</Link>
-
+			<Link
+				className={`relative flex h-full items-center px-5 ${
+					navLinks.episodes === pathname ? 'bg-zinc-950' : ''
+				}`}
+				href={'/episodes'}
+			>
+				Episodes
+				{navLinks.episodes === pathname && (
+					<span className="absolute inset-x-0 bottom-0 h-1 bg-cyan-600" />
+				)}
+			</Link>
 			<Link
 				className={`relative flex h-full items-center px-5 ${
 					navLinks.locations === pathname ? 'bg-zinc-950' : ''

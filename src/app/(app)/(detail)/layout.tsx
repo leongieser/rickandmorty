@@ -3,5 +3,5 @@ export default function DetailLayout({
 }: {
 	children: React.ReactNode
 }) {
-	return <main>{children}</main>
+	return <section className="flex w-full flex-grow ">{children}</section>
 }
