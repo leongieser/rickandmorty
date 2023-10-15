@@ -27,7 +27,7 @@ export default function Home() {
 				href={'/episodes'}
 				className="group flex w-full items-center justify-center "
 			>
-				<div className="absolute h-80 w-80 bg-blue-200">
+				<div className="absolute h-80 w-80 ">
 					<Image
 						className="absolute -left-36 -top-36 z-50 h-fit w-fit -rotate-12 animate-pulse"
 						src="/assets/grand_opening.png"
@@ -35,6 +35,7 @@ export default function Home() {
 						width={350}
 						height={350}
 						layout="fixed"
+						fetchPriority="high"
 					/>
 					<Image
 						className="absolute -left-36 -top-36 z-50 h-fit w-fit -rotate-12 opacity-70"
@@ -42,7 +43,7 @@ export default function Home() {
 						alt="Rick and Morty"
 						width={350}
 						height={350}
-						layout="fixed"
+						fetchPriority="high"
 					/>
 				</div>
 				<Image
@@ -51,7 +52,7 @@ export default function Home() {
 					alt="Rick and Morty"
 					width={500}
 					height={500}
-					layout="fixed"
+					fetchPriority="high"
 				/>
 			</Link>
 		</main>
