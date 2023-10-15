@@ -1,6 +1,5 @@
 import { Inter } from 'next/font/google'
 import { BreakpointIndicator } from '@/ram/components/util/BreakpointIndicator'
-import { ThemeSwitch } from '../components/util/ui/ThemeSwitch'
 import './globals.css'
 import Providers from './providers'
 
@@ -32,7 +31,6 @@ export default function RootLayout({
 		<html lang="en" className="dark" style={{ colorScheme: 'dark' }}>
 			<body className={inter.className}>
 				<Providers>
-					<ThemeSwitch />
 					<BreakpointIndicator />
 					{children}
 				</Providers>

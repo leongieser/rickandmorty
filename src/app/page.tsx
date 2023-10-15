@@ -1,5 +1,7 @@
 import localFont from 'next/font/local'
 import Image from 'next/image'
+import Link from 'next/link'
+import { ThemeSwitch } from '@/ram/components/ui/ThemeSwitch'
 
 const ramFont = localFont({
 	src: '../lib/fonts/WubbaLubbaDubDub.woff2',
@@ -13,16 +15,21 @@ const ramFont = localFont({
 export default function Home() {
 	return (
 		<main className="flex min-h-screen w-screen flex-col items-center justify-center gap-12 p-24">
+			<div className="absolute right-5 top-5">
+				<ThemeSwitch />
+			</div>
 			<h1
 				className={`${ramFont.className} thicc-outline mx-auto text-center text-8xl text-headingFill `}
 			>
 				Wubba Lubba dub-dub
 			</h1>
-
-			<section className="group mx-auto w-full ">
-				<div className="relative mx-auto">
+			<Link
+				href={'/episodes'}
+				className="group flex w-full items-center justify-center "
+			>
+				<div className="absolute h-80 w-80 bg-blue-200">
 					<Image
-						className="absolute -top-28 left-36 z-50 h-fit w-fit -rotate-12 animate-pulse"
+						className="absolute -left-36 -top-36 z-50 h-fit w-fit -rotate-12 animate-pulse"
 						src="/assets/grand_opening.png"
 						alt="Rick and Morty"
 						width={350}
@@ -30,24 +37,23 @@ export default function Home() {
 						layout="fixed"
 					/>
 					<Image
-						className="absolute -top-28 left-36 z-50 h-fit w-fit -rotate-12 opacity-70"
+						className="absolute -left-36 -top-36 z-50 h-fit w-fit -rotate-12 opacity-70"
 						src="/assets/grand_opening.png"
 						alt="Rick and Morty"
 						width={350}
 						height={350}
-						layout="fixed"
-					/>
-
-					<Image
-						className="duration-3000 mx-auto animate-spin-slow transition-all hover:animate-spin-slow "
-						src="/assets/portal.png"
-						alt="Rick and Morty"
-						width={500}
-						height={500}
 						layout="fixed"
 					/>
 				</div>
-			</section>
+				<Image
+					className="duration-3000 mx-auto animate-spin-slow transition-all hover:animate-spin-slow "
+					src="/assets/portal.png"
+					alt="Rick and Morty"
+					width={500}
+					height={500}
+					layout="fixed"
+				/>
+			</Link>
 		</main>
 	)
 }
