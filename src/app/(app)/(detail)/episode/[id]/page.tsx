@@ -1,6 +1,6 @@
-export async function generateMetadata({ params }: { params: { id: string } }) {
-	return null //TODO
-}
+// export async function generateMetadata({ params }: { params: { id: string } }) {
+// 	return null //TODO
+// }
 
 export default function Episode() {
 	return (
