@@ -8,7 +8,7 @@ const navLinks = {
 	characters: '/characters',
 	locations: '/locations',
 }
-//TODO use main theme colors
+
 export function HeaderNavLinks() {
 	const pathname = usePathname()
 
@@ -24,7 +24,7 @@ export function HeaderNavLinks() {
 			>
 				Characters
 				{navLinks.characters === pathname && (
-					<span className="absolute inset-x-0 bottom-0 h-2 bg-zinc-950 dark:bg-ram-primary" />
+					<span className="absolute inset-x-0 bottom-0 h-2 bg-ram-secondary dark:bg-ram-primary" />
 				)}
 			</Link>
 			<Link
@@ -37,7 +37,7 @@ export function HeaderNavLinks() {
 			>
 				Episodes
 				{navLinks.episodes === pathname && (
-					<span className="absolute inset-x-0 bottom-0 h-2 bg-zinc-950 dark:bg-ram-primary" />
+					<span className="absolute inset-x-0 bottom-0 h-2  bg-ram-secondary dark:bg-ram-primary" />
 				)}
 			</Link>
 			<Link
@@ -50,7 +50,7 @@ export function HeaderNavLinks() {
 			>
 				Locations
 				{navLinks.locations === pathname && (
-					<span className="absolute inset-x-0 bottom-0 h-2 bg-zinc-950 dark:bg-ram-primary" />
+					<span className="absolute inset-x-0 bottom-0 h-2 bg-ram-secondary dark:bg-ram-primary" />
 				)}
 			</Link>
 		</nav>
