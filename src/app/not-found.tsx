@@ -1,19 +1,23 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { SectionHeader } from '../components'
 
 export default function NotFound() {
 	return (
-		<div>
-			<h2>404 | Not Found</h2>
+		<div className="flex h-screen w-screen flex-col items-center justify-center gap-5 ">
+			<SectionHeader heading="404 | Not Found" />
 			<Image
+				className="mx-auto"
 				src="/assets/404.png"
 				alt="404"
 				width={500}
 				height={500}
 				layout="fixed"
 			/>
-			<p>Could not find requested resource</p>
-			<Link href="/">Go Home</Link>
+
+			<Link href="/characters">
+				<SectionHeader heading="Go Home" />
+			</Link>
 		</div>
 	)
 }
