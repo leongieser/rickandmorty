@@ -1,1 +1,10 @@
 -   [ ] fix opengraph / twitter
+-   [ ] group episodes by season
+-   [ ] refactor pagination (reusable)
+-   [ ] reusable button (cva)
+-   [x] clean up imports/exports
+-   [x] import font from single file
+-   [x] move types / interfaces to api.ts
+-   [ ] zod instead of interface / type
+-   [ ] ? name of ep / loc / char instead of next
+-   [ ] Error handling - meh
