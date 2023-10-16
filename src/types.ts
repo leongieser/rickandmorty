@@ -8,17 +8,7 @@ export interface Episode {
 	created: string
 }
 
-export interface AllEpisodesResponse {
-	info: {
-		count: string
-		pages: string
-		next: string
-		prev: string | null
-	}
-	results: Episode[]
-}
-
-export interface Charater {
+export interface Character {
 	id: string
 	name: string
 	status: string
@@ -37,4 +27,44 @@ export interface Charater {
 	episode: string[]
 	url: string
 	created: string
+}
+
+export interface Location {
+	id: number
+	name: string
+	type: string
+	dimension: string
+	residents: string[]
+	url: string
+	created: string
+}
+
+export interface AllEpisodes {
+	info: {
+		count: string
+		pages: string
+		next: string
+		prev: string | null
+	}
+	results: Episode[]
+}
+
+export interface AllCharacters {
+	info: {
+		count: string
+		pages: string
+		next: string
+		prev: string | null
+	}
+	results: Character[]
+}
+
+export interface AllLocations {
+	info: {
+		count: string
+		pages: string
+		next: string
+		prev: string | null
+	}
+	results: Location[]
 }
