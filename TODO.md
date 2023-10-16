@@ -1,4 +1,4 @@
--   [ ] fix opengraph / twitter
+-   [x] fix opengraph / twitter
 -   [ ] group episodes by season
 -   [ ] refactor pagination (reusable)
 -   [ ] reusable button (cva)
@@ -8,3 +8,4 @@
 -   [ ] zod instead of interface / type
 -   [ ] ? name of ep / loc / char instead of next
 -   [ ] more/better Error handling
+-   [ ] individual loading states
