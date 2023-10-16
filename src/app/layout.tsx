@@ -28,7 +28,7 @@ export default function RootLayout({
 	children: React.ReactNode
 }) {
 	return (
-		<html lang="en" className="dark" style={{ colorScheme: 'dark' }}>
+		<html lang="en" className="light" style={{ colorScheme: 'light' }}>
 			<body
 				className={`flex min-h-screen w-screen flex-col items-center justify-center bg-zinc-50 dark:bg-zinc-800 ${inter.className}`}
 			>
