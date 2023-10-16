@@ -7,5 +7,10 @@
 -   [x] move types / interfaces to api.ts
 -   [ ] zod instead of interface / type
 -   [ ] ? name of ep / loc / char instead of next
--   [ ] more/better Error handling
+-   [ ] more / better Error handling
 -   [ ] individual loading states
+-   [ ] filter chars by dead/alive
+-   [ ] filter chars by name => ?name=rick
+-   [ ] fileter episodes by name
+-   [ ] option to display items in grid or list form (tanstack table)
+-   [ ] back button

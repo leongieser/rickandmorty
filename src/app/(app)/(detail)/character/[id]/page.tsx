@@ -52,9 +52,7 @@ export default async function Character({
 
 	return (
 		<section className="flex w-full flex-grow flex-col items-center gap-8 p-5">
-			<div className="flex gap-5 ">
-				<SectionHeader heading="Character" />
-			</div>
+			<SectionHeader heading="Character" />
 			<div className="flex gap-4">
 				<Link
 					className={cn(
