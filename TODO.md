@@ -7,4 +7,4 @@
 -   [x] move types / interfaces to api.ts
 -   [ ] zod instead of interface / type
 -   [ ] ? name of ep / loc / char instead of next
--   [ ] Error handling - meh
+-   [ ] more/better Error handling
