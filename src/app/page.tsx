@@ -1,15 +1,25 @@
-import localFont from 'next/font/local'
 import Image from 'next/image'
 import Link from 'next/link'
 import { ThemeSwitch } from '@/ram/components/ui/ThemeSwitch'
+import { ramFont } from '../lib/utils'
 
-const ramFont = localFont({
-	src: '../lib/fonts/WubbaLubbaDubDub.woff2',
-	preload: true,
-	display: 'swap',
-	weight: 'normal',
-	variable: '--font-ram',
-})
+export const metadata = {
+	openGraph: {
+		title: 'Rick and Morty Fan Page',
+		description:
+			'A wiki like page with details about all Characters, Episodes and Locations from the Rick and Morty universe.',
+		siteName: 'Rick and Morty Fan Page',
+		images: [
+			{
+				url: '/assets/opengraph-image.jpg',
+				width: 851,
+				height: 315,
+			},
+		],
+		locale: 'en_US',
+		type: 'website',
+	},
+}
 
 export default function Home() {
 	return (
